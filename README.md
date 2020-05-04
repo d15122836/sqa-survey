@@ -17,6 +17,10 @@ An industry standard software development approach includes various components t
 6. Team version control
 7. Code Review
 
+## Road Map
+
+## Software Development Model
+
 ## Backlog Refinement
 
 In a agile software development approach, a project is divides into several small tasks which are estimated to be completed within a week or two. Generally a sprint is of 2 weeks that is 10 working days.
@@ -24,7 +28,7 @@ Therefore, a backlog is defined which contains all the tasks that are required t
 
 The tasks added in the backlog are put in the order in which they need to be carried out. The most important tasks such as setting up environment are put on top and the least important tasks such as GUI enhancement are put at the below.
 
-### Backlog
+### Project Backlog
 
 **Story 1** : Setting up a working environment
 
@@ -118,3 +122,9 @@ Also, for every tasks we have assigned story points which are multiples of 2. We
 Every task that is estimated to be over 4 story points, is broken down to smaller tasks which can be of 1,2 and 4. For example, implementing a controller class can be a task of 8 story point but it was divided into smaller tasks as per each function.
 
 #### Velocity metrics
+
+The velocity metrics is used to calculate the performance of the team. It tells us the progress made by the team as the number of sprints passes. The velocity is calculated by dividing the number of story points a team plans to do in a sprint to the number of working days each team member is commiting to the sprint. The target is calculated before the start of the sprint and analyze whether it has been achieved or not at the end of the sprint.
+
+## Team Version control
+
+## Code Review checklist
