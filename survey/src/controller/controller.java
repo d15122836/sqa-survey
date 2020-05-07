@@ -20,7 +20,26 @@ public class controller {
             surveyResponse.put(question, resp);
         }
     }
-
+    public static void listSurvey(){
+        Iterator itr = listSurvey.iterator();
+        System.out.println("Listing all the surveys");
+        while(itr.hasNext()){
+            System.out.println(itr);
+        }
+    }
+    public static ArrayList<String> getSurvey(String surveyName) {
+        Iterator itr = listSurvey.iterator();
+        while (itr.hasNext()) {
+            String survey = null;
+            if (surveyName == itr.next()) {
+                System.out.println("Survey Found");
+                survey = itr.next();
+            } else {
+                System.out.println("Survey Not found");
+            }
+        }
+        return survey;
+    }
 }
 
 
