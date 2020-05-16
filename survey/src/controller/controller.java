@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class controller {
-    public static void createSurvey(String name){
+    public static HashMap<String, Integer> createSurvey(String name){
         int i=1;
         int resp=0;
         Scanner sc = new Scanner(System.in);
@@ -21,6 +21,7 @@ public class controller {
             resp = sc.nextInt();
             surveyResponse.put(question, resp);
         }
+        return surveyResponse;
     }
     public static void listSurvey(){
 
@@ -83,6 +84,38 @@ public class controller {
             ques.add(quesToAdd);
         }
         return ques;
+    }
+
+    public static resp responseCalculation(String surveyName){
+        HashMap<String, Integer> surveyResp = createSurvey(surveyName);
+        Iterator iterator = surveyResp.keySet().iterator();
+        int count=0;
+        int sum =0;
+        double standardDeviation = 0.0, SD =0.0;
+        int []values =new int[10];
+        int i=0;
+        int maxValue = 0;
+        int minValue = 0;
+        while(iterator.hasNext()){
+
+           String key = iterator.next().toString();
+           values[i] = surveyResp.get(key);
+           sum = sum + values[i];
+           standardDeviation += Math.pow(values[i]-sum,2);
+            maxValue= values[0];
+            minValue=values[0];
+            if (values[i]>maxValue){
+                maxValue= values[i];
+            }
+            if (values[i]<minValue){
+                minValue=values[i];
+            }
+           i++;
+
+        }
+
+        SD = Math.sqrt(standardDeviation/10);
+        return new resp(SD,maxValue,minValue);
     }
 
 }
