@@ -1,5 +1,7 @@
 package controller;
 
+import org.HdrHistogram.DoubleHistogram;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -10,7 +12,7 @@ public class controller {
         int i=1;
         int resp=0;
         Scanner sc = new Scanner(System.in);
-        ArrayList<String> surveyQues = addQuestions();
+        ArrayList<String> surveyQues = addQuestions(name);
         HashMap<String, Integer> surveyResponse = new HashMap<String, Integer>();
         Iterator itr = surveyQues.iterator();
         while(itr.hasNext()){
@@ -21,21 +23,26 @@ public class controller {
         }
     }
     public static void listSurvey(){
+
+        DoubleHistogram.AllValues listSurvey = null;
         Iterator itr = listSurvey.iterator();
         System.out.println("Listing all the surveys");
         while(itr.hasNext()){
             System.out.println(itr);
         }
     }
-    public static ArrayList<String> getSurvey(String surveyName) {
+    public static String getSurvey(String surveyName) {
+        DoubleHistogram.AllValues listSurvey = null;
         Iterator itr = listSurvey.iterator();
+        String survey = null;
         while (itr.hasNext()) {
-            String survey = null;
+            survey = null;
             if (surveyName == itr.next()) {
                 System.out.println("Survey Found");
-                survey = itr.next();
+                survey = (String) itr.next();
             } else {
                 System.out.println("Survey Not found");
+                survey = null;
             }
         }
         return survey;
@@ -43,7 +50,9 @@ public class controller {
     public static void modifySurvey(String surveyName)
     {
         Scanner sc = new Scanner(System.in);
-        Iterator itr = listSurvey.iterator();
+        Iterator itr;
+        DoubleHistogram.AllValues listSurvey = null;
+        itr = listSurvey.iterator();
         while (itr.hasNext()) {
             String survey = null;
             if (surveyName == itr.next()) {
