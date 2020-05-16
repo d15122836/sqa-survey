@@ -10,7 +10,7 @@ public class controller {
         int i=1;
         int resp=0;
         Scanner sc = new Scanner(System.in);
-        ArrayList<String> surveyQues = name.getItems();
+        ArrayList<String> surveyQues = addQuestions();
         HashMap<String, Integer> surveyResponse = new HashMap<String, Integer>();
         Iterator itr = surveyQues.iterator();
         while(itr.hasNext()){
@@ -40,7 +40,45 @@ public class controller {
         }
         return survey;
     }
+    public static void modifySurvey(String surveyName)
+    {
+        Scanner sc = new Scanner(System.in);
+        Iterator itr = listSurvey.iterator();
+        while (itr.hasNext()) {
+            String survey = null;
+            if (surveyName == itr.next()) {
+                System.out.println("Survey Found");
+                System.out.println("Calling Add function");
+                addQuestions(surveyName);
+                 }
+
+                else {
+                    System.out.println("Invalid Choice");
+                    continue;
+                }
+            }
+        }
+
+
+    public static ArrayList<String> addQuestions(String surveyName) {
+        Scanner sc = new Scanner(System.in);
+        HashMap<String, String> surveyNameQues = new HashMap<>();
+        ArrayList<String> ques = new ArrayList<>();
+        System.out.println("Enter the number of questions to add");
+        int NoOfQues = sc.nextInt();
+
+        for (int i = 0; i <= NoOfQues; i++) {
+            System.out.println("Enter the Question");
+            String quesToAdd = sc.next();
+            surveyNameQues.put(surveyName, quesToAdd);
+            ques.add(quesToAdd);
+        }
+        return ques;
+    }
+
 }
+
+
 
 
 
