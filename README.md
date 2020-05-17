@@ -128,3 +128,13 @@ The velocity metrics is used to calculate the performance of the team. It tells 
 ## Team Version control
 
 ## Code Review checklist
+
+## Unit Testing
+
+In order to test the functioning of our code, we have written test cases for every function required for survey. These tests helps the developers to determine whether the code is appropriate and meets the requirement for the project. We have created a seperate test package containing all the test cases required for carrying out the tests.
+
+## Code coverage tool
+
+For our project, we used Junit tool as a code coverage tool. This tool is an inbuilt feature of Intellij and most widely used as a code coverage tool. In the below screenshot, we can see the how it was executed on our code. It was successfully implemented on our code. It has a great coverage percentage of the code. For every file in our project, we can see a coverage percentage which is further classified into percentage of lines,methods and classes covered.
+
+![](screenshot-codecoverage.png)

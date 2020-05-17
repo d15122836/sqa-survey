@@ -1,9 +1,8 @@
 package test;
 import controller.controller;
-
 import java.util.Scanner;
 
-public class test_createSurvey extends controller {
+class test_createSurvey extends controller {
     public static void main(String args[])
     {
         controller control;
