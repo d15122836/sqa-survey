@@ -127,7 +127,19 @@ The velocity metrics is used to calculate the performance of the team. It tells 
 
 ## Team Version control
 
+In our project, we have created a seperate branch for each feature implemented so that every team member can work individually on their feature. In the below screenshot, we can see that total 6 branches were created to carry out the tasks and were merged to achieve the main objective. All the feature branches were independent of each other. However, there were some features which were heavily dependent on the other features for their completion. Due to this those tasks were pulled in the sprint first and implemented.
+
+![](gitflow.png)
+
 ## Code Review checklist
+
+This checklists includes certain keypoints that should be kept in mind while reviewing the code and before merging it in the master branch. These are as follows:-
+
+1. Is the code understandable to a new developer.
+2. Coding standards followed while writing the code.
+3. Duplication of the code.
+4. Are the test cases defined for the code so as to debug easily in future.
+5. Code complexity, reliability and also determine whether code can handle in future modifications.
 
 ## Unit Testing
 
