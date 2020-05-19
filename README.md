@@ -19,6 +19,28 @@ An industry standard software development approach includes various components t
 
 ## Road Map
 
+In order to develop a software project, there is a great importance of a well-defined road map. A road map will help the software engineers working on the project to figure out a proper mechanism for constructiong software codes. All the potential risks and limitations are acknowledged before commencing the project work. For this project, we have defined a road map which is as follows:
+
+### Project Goals and Objectives
+
+The main goal or the objective of our project is to create a survey functionality without the database and UI. The functionality created should be such that it can be implemented by the other software developers with their UI. This way it will save the time in redefining the functionalities.
+
+### Timeline
+
+The timeline for our project is 1 month and the deadline is 20,May,2020. The stories created are divided such that they all can be completed with in the given time frame.
+
+### Important Milestones
+
+The most important milestone for our project is the implementation of the survey methods. The methods and their test cases should be well defined and up to the mark.
+
+### Possible Risks
+
+Since many functions in the survey class are inter-dependent, therefore there is a high chance that error in one function can effect the working of other functions as well.
+
+### Dependencies
+
+For the successfull implementation of the project, there are lot of dependencies which needs to be considered beforehand. Our project requires a github account, Junit for unit testing, good programming knowledge.
+
 ## Software Development Model
 
 ## Backlog Refinement
