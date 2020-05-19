@@ -35,7 +35,7 @@ The most important milestone for our project is the implementation of the survey
 
 ### Possible Risks
 
-Since many functions in the survey class are interdependent, therefore there is a high chance that error in one function can effect the working of other functions as well.
+Since many functions in the survey class are inter-dependent, therefore there is a high chance that error in one function can effect the working of other functions as well.
 
 ### Dependencies
 
