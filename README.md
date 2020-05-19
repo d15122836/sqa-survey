@@ -43,6 +43,8 @@ For the successfull implementation of the project, there are lot of dependencies
 
 ## Software Development Model
 
+To meet the requirements of the customers while developing softwares, it is essential to follow a software development model depending on various factors such as customer requirements, testing, scope of the project etc.. Therefore, in our project a combination of waterfall and Agile software development model was followed. In waterfall model, all the requirements are listed before starting the project development and are not changed over the time. Also in agile software development model, every tasks is divided into various sub-tasks and they all are carried out individually which enable developers to work independentally of other developers. In our project also, all the requirements were listed and provided to us at the begining and there were no changes/modifications in the requirements by the customer. Therefore, we can say we have implemented waterfall software model to some extent as the requirements remained same over the period of time. However, unlike waterfall or other models, we tried to divide the features into many small tasks as defined in the stories section. So, it can also be concluded that agile software development model was also implemented to some extent.
+
 ## Backlog Refinement
 
 In a agile software development approach, a project is divides into several small tasks which are estimated to be completed within a week or two. Generally a sprint is of 2 weeks that is 10 working days.
